@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-	<body>
+	<body style = "background-color:#f4f4f4; height: 660px;">
 	 <header>
 		 <div class="container">
 			 <div id="branding">
@@ -79,18 +79,19 @@
                       </tr>
                       <tr></tr>
                       <tr>
-                              <td width = 35% ><input   type="submit" value="ADD PRODUCT" (click)="AddProduct(pid.value,pname.value,qty.value,price.value)"  style=" width:90%; height:45px; font-weight:bold "/></td>
+                              <td width = 35% ><input   type="submit" value="ADD PRODUCT" (click)="AddProduct(pid.value,pname.value,qty.value,price.value)" (mouseleave)="clear()" style=" width:90%; height:45px; font-weight:bold "/></td>
                                 <td width = 35%><input  type="submit" value="MODIFY PRODUCT" (click)="ModifyProduct(pid.value,pname.value,qty.value,price.value)"  style=" width:90%; height:45px; font-weight:bold; "/></td>
                                 <td><input  type="submit" value="RESET" (click)="ResetProduct(pid,pname,qty,price)"  style=" width:90%; height:45px; font-weight:bold; "/></td>
                           </tr>
                           <tr></tr>
                           <tr></tr>
-              
-                         
-                      <tr></tr>
-                     
+                          <tr></tr>
+                          <tr></tr>
                   </tbody>
               </table>
+              <div style="padding-left:450px">
+                <span style="color:green ;font-size:20px;">{{show}}</span>
+              </div>
                 
                 
                     

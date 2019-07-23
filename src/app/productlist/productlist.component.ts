@@ -11,6 +11,7 @@ export class ProductlistComponent implements OnInit {
   x: Product;
   result: any;
   y: any;
+  show:any;
   constructor(private ser :SmsservicesService) {
   
    }
@@ -26,6 +27,11 @@ export class ProductlistComponent implements OnInit {
     this.ser.ajaxcall(x).subscribe( (data)=> { console.log("Inserted", data); });
     //this.ser.ajaxcall1(x).subscribe( (data)=> { console.log(data); this.y = data; this.result = JSON.stringify(this.y) });
     console.log(this.result);
+    this.show = "Product Added";
+}
+clear()
+{
+  this.show = "";
 }
 SingleProduct(pid:number,name: HTMLInputElement,qty: HTMLInputElement,price: HTMLInputElement) {
     this.ser.ajaxcall2(pid).subscribe( (data)=> { this.y = data; 
