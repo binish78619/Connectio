@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+	<body style = "background-color:#ececec; height: 660px;">
+	 <header>
+		 <div class="container">
+			 <div id="branding">
+			 <h1> <span class="highlight">WELCOME TO CONNECTIO</span></h1>
+             </div>
+		 </div>
+     </header>
+     <table border="0" cellspacing="2" cellpadding="1"  >
+         <tr>
+             <td>
+     <img src="download.jpg"  width="350" height="300" style="float:middle;padding-left:150px;padding-top:100px;">
+     </td>
+     <td style="width:80%;">
+            <div class="container" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                <div  style = "padding-left: 200px;">    
+                <table border="0" cellspacing="5" cellpadding="1"  >
+                    <thead>
+                        <tr>
+                            <th><br></th>
+                            <th><br></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr></tr>
+                        
+                    
+                      <tr></tr>
+                      
+                      <tr></tr>
+                      <tr></tr>
+                      <tr></tr>
+                      <tr></tr>
+                      <tr></tr>
+                      <tr></tr>
+                      <tr></tr>
+                          <tr></tr>
+                        <tr>
+                           
+                    <td id="block1" style="padding-top: 20px;"><label>MOBILE NO</label><br><br></td>
+                    <td style="padding-inline-start:10px;padding-top: 20px;" ><input type="text"  placeholder="Enter Mobile No" style=" border: 2px solid black;
+                        color:gray;border-radius: 8px;"name="mobno" #mobno /><br>
+                        <span style="color: darkred;padding-left: 1px; " >{{mobile}}</span><br></td>
+                        </tr>
+                        <tr></tr>
+                        
+                        <tr> </tr>
+                        <tr>
+                            <td id="block1" style="padding-top: 20px;"><label>PASSWORD</label><br><br></td>
+                             <td style="padding-inline-start:10px;padding-top: 20px;" ><input  type="password"  placeholder= "Enter Password"style=" border: 2px solid black;
+                                color: gray;border-radius: 8px;" name="password" #password  /><br>
+                                <span style="color:darkred;padding-left: 1px;" >{{loginpass}}</span><br></td>
+                            
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                                <td style="padding-inline-start:35px"><input  type="submit" value="LOGIN" (click)="submit(mobno.value,password.value)" (blur)="clear(mobno,password)" style=" width:200%; height:45px; font-weight:bold ; border: 2px solid black;
+                                    color:black;border-radius: 8px;background-color:rgb(137, 214, 245);"/></td>
+                            
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                
+                           <tr><td style = "padding-inline-start:170px">OR</td></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <td style="padding-inline-start:35px"><input  type="submit" value="SIGNUP" (click)="customersubmit()" (mouseleave)="clear(mobno,password)" style=" width:200%; height:45px; font-weight:bold ;border: 2px solid black;
+                                color:black;border-radius: 8px;background-color:rgb(137, 214, 245);"/></td>
+                        <tr></tr>
+                       
+                    </tbody>
+                </table>
+                </div>
+            </div>
+            </td>
+            </tr>
+            </table>
+    </body>
+    
+</html>

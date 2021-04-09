@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+	<body style = "background-color:#ececec; height: auto;">
+	 <header>
+		 <div class="container">
+			 <div id="branding">
+			 <h1> <span class="highlight">{{name}}</span></h1>
+             
+			 </div>
+			 <nav>
+				 <ul>
+				        
+                                         
+										 <li><a href="http://localhost:4200/myprofile">BACK TO MY PROFILE</a></li>
+				 </ul>
+			 </nav>
+		 </div>
+	 </header><br>
+     
+      <br><br>
+       
+        <div style="padding:5%;padding-top:15px;">
+          <mat-card > 
+            <div class="example-container mat-elevation-z8" >
+            <table border="0" cellspacing="2" cellpadding="1"  >
+              
+                <tr>
+                    <td style="width:780px;">
+                      <mat-table #Table [dataSource]="MyDataSource6" style="padding-left: 50px;background-color: rgb(137, 214, 245);width:94%">
+                        <!-- For ID -->
+                        <ng-container matColumnDef="POSTS">
+                            <mat-header-cell *matHeaderCellDef style="font-weight: bold; font-size: 16px; color:black;"> POSTS </mat-header-cell>
+                            <mat-cell *matCellDef="let get" style="font-weight: bold; font-size: 16px; color:black;">{{get.caption3}} 
+                              <img [src] = "_DomSanitizationService.bypassSecurityTrustUrl(get.imgpath3)" style="padding-left: 400px;height:95%;width:95%;"/></mat-cell>
+                        </ng-container>
+    
+                        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+                    </mat-table>
+                    
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td><td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+             
+
+              <td style="width:400px;">
+            
+                <mat-table #Table [dataSource]="MyDataSource7" style="background-color: rgb(137, 214, 245);width:100%;">
+                  <!-- For ID -->
+                  <ng-container matColumnDef="SUGGESTED CONNECTS">
+                      <mat-header-cell *matHeaderCellDef style="font-weight: bold; font-size: 16px; color:black;width:200px"> SUGGESTED CONNECTS </mat-header-cell>
+                      <mat-cell *matCellDef="let get" style="font-weight: bold; font-size: 16px; color:black;"><a href="http://localhost:4200/connprofile" (click)="getRecord(get.connects)">{{get.connects}}</a></mat-cell>
+                  </ng-container>
+
+                  <mat-header-row *matHeaderRowDef="displayedColumns1"></mat-header-row>
+                  <mat-row *matRowDef="let row; columns: displayedColumns1;"></mat-row>
+              </mat-table>
+         
+                </td>
+                </tr>
+                </table>
+                </div>
+                
+ 
